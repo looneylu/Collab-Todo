@@ -36,25 +36,31 @@ html * {
 	margin: 0;
 }
 
-body {
-	background: #ffffff;
-	color: #333333;
-	margin: 0 auto;
-	max-width: 960px;
-	overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
-	   -moz-box-shadow: 0 0 0.3em #255b17;
-	-webkit-box-shadow: 0 0 0.3em #255b17;
-	        box-shadow: 0 0 0.3em #255b17;
+#header{
+	width: 778px;
+	background: #FFFFFF url(../images/head_background.gif) repeat-x;
+	height: 70px;
+	margin: 0px auto;
 }
 
-#grailsLogo {
-	background-color: #abbf78;
+#footer{
+	clear:both;
+	text-align: center;
+	padding: 3px;
+	border-top:1px solid #333;
+}
+
+#header h1{
+	fontfamily:Arial,sans-serif;
+	color: white;
+	padding: 20px 0 0 6px;
+	font-size: 1.6em;
 }
 
 #topbar{
-	textalign:left;
+	textalign: right;
 	width: 778px;
-	margin:0px auto;
+	margin: 0px auto;
 	padding: 5px 0;
 }
 
@@ -65,60 +71,43 @@ body {
 	font-size: 10px;
 }
 
-#footer{
-	clear:both;
-	text-align: center;
-	padding: 3px;
-	border-top: 1px solid #333
-}
-
-#header{
-	width: 778px;
-	background: #FFFFFF url(../images/header_background.gif) repeat-x;
-	height: 70px;
-	margin: 0px auto;
-}
-
-#header h1{
-	fontfamily:Arial,sans-serif;
-	color: white;
-	padding: 20px 0 0 6px;
-	font-size:1.6em;
-}
-
-body{
+body {
 	margin: 0px;
 	padding: 0px;
-	text-align:center;
-	fontfamily: "Trebuchet MS", Arial,Helvetica,sans-serif;
-	fontstyle:normal;
+	text-align: left;
+	fontfamily:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	fontstyle: normal;
 	fontvariant: normal;
 	fontweight: normal;
-	fontsize: 13px;
+	fotsize: 13px;
 	line-height: normal;
-	fotnsize-adjust: none;
+	fontsize-adjut: none;
 	fontstretch: normal;
 	color: #333333;
 }
 
 #page{
-	width: 778px;
+	width: 75%;
 	margin: 0px auto;
 	padding: 4px 0;
-	text-align: left;
+	text-align:left;
 }
 
 #content{
-	float: left;
+	float:left;
 	width: 560px;
 	color: #000;
 }
 
 #sidebar{
-	float:right;
+	float: right;
 	width: 200px;
 	color: #000;
 	padding: 3px;
+}
+
+#grailsLogo {
+	background-color: #abbf78;
 }
 
 /* replace with .no-boxshadow body if you have modernizr available */

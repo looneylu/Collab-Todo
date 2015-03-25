@@ -16,6 +16,7 @@
 		<asset:javascript src="application.js"/>
 		<g:layoutHead/>
 	</head>
+
 	<body>
 		<div id= "page">
 			<div id = "spinner" class= "spinner" style = "display: none;">
@@ -29,6 +30,9 @@
 			</div>
 			<div id= "content">
 				<g:layoutBody/>
+			</div>
+			<div id= "sidebar">
+				<g:render template="/common/buddies"/>
 			</div>
 		</div>
 	</body>
